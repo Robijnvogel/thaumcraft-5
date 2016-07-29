@@ -11,6 +11,16 @@ enchantment.repair=Réparation
 enchantment.special.sapless=Faible Absorption
 enchantment.special.sapgreat=Grande Absorption
 #
++# Infusion Enchantments
++###################################
+enchantment.infusion.COLLECTOR=Collectionneur
+enchantment.infusion.DESTRUCTIVE=Dévastateur
+enchantment.infusion.BURROWING=Affouillement
+enchantment.infusion.SOUNDING=Émetteur
+enchantment.infusion.REFINING=Affinage
+enchantment.infusion.ARCING=Arc
+enchantment.infusion.ESSENCE=Moissonneur d'essence
+#
 # Potions
 ###################################
 potion.fluxtaint=Poison corrupteur
@@ -27,16 +37,16 @@ potion.thaumarhia=Thaumarhia
 # Warp
 ###################################
 warp.text.1=Vous vous sentez bizarrement drainé.
-warp.text.2=Une faim soudaine et anormal vous consume.
+warp.text.2=Une faim soudaine et anormale vous consume.
 warp.text.hunger.1=Votre faim ne peut être satisfaite avec de la nourriture standard.
 warp.text.hunger.2=Votre faim commence à disparaître.
 warp.text.3=D'étranges murmures vous révèlent des secrets.
 warp.text.4=Votre vue devient étrange et macabre.
-warp.text.5=La lumière devient soudain accablante et brule votre peau.
+warp.text.5=La lumière devient soudain accablante et brûle votre peau.
 warp.text.6=Un épais brouillard apparait de nul part. Quelque chose se meut en son sein.
 warp.text.7=Ils sont partout ! Courrez !
 warp.text.8=Il existe sûrement un moyen de stopper ces migraines ?
-warp.text.9=Vous vous entez soudainement réticent à casser des choses.
+warp.text.9=Vous vous sentez soudainement réticent à casser des choses.
 warp.text.10=Votre perception s'étend soudainement.
 warp.text.11=Quel était ce bruit ? Quelque chose est derrière vous.
 warp.text.12=Quelque chose vous suit.
@@ -126,7 +136,7 @@ champion.mod.infested=L'infesté
 tc.boss.crimson=Un portail rubis s'ouvre non loin, annonçant l'arrivé du Culte Cramoisi. Vous devez fermer le portail au plus vite!
 tc.boss.golem=Une sentinelle solitaire se dresse figée dans la pièce, mais quand l'énergie commence à crépiter à travers son vieux corps, vous comprenez qu'elle ne vas pas rester immobile très longtemps.
 tc.boss.warden=De l'énergie sombre bouillonne sur un pièdestal distant. Quelque chose vient...
-tc.boss.taint=Un bruissement organique vient au-delà de la salle. Le sound d'une mauvaise chose... quelque chose grossit...
+tc.boss.taint=Un bruissement organique vient au-delà de la salle. Le sound d'une mauvaise chose... Quelque chose grossit...
 #
 # Blocks
 ###################################
@@ -145,7 +155,7 @@ tile.log.silverwood.name=Bois d'argent
 tile.leaf.greatwood.name=Feuilles de bois arcanique
 tile.leaf.silverwood.name=Feuilles de bois d'argent
 tile.taint_log.taintwood.name=Bois corrumpu
-tile.taint_leaf.taintwood.name=Feuilles corrumpu
+tile.taint_leaf.taintwood.name=Feuilles corrumpues
 tile.sapling.greatwood.name=Pousse de bois arcanique
 tile.sapling.silverwood.name=Pousse de bois d'argent
 tile.plank.greatwood.name=Planches de bois arcanique
@@ -204,6 +214,7 @@ tile.eldritch.lock.name=Mechanisme de fermeture Ancien
 tile.eldritch.door.name=Ancienne porte
 tile.eldritch.teleporter.name=Portail surnaturel
 tile.eldritch.crabspawner.name=Ouverture incrustée
+tile.grass_ambient.name=Bloc d'herbe ambiante
 #
 # Doodads
 tile.table_stone.name=Table en pierre
@@ -505,10 +516,17 @@ item.baubles.0.name=Amulette quelconque
 item.baubles.1.name=Anneau quelconque
 item.baubles.2.name=Ceinture quelconque
 item.baubles.3.name=Anneau d'apprenti de %TYPE
-item.amulet_vis.text=Recharges wands in hotbar
+item.baubles.9.name=Amulette chic
+item.baubles.10.name=Anneau chic
+item.baubles.11.name=Ceinture chic
+item.amulet_vis.text=Recharge des baguettes dans la barre d'action
 item.amulet_vis.0.name=Pierre de Vis
 item.amulet_vis.1.name=Amulette de Stockage de Vis
 item.girdle_hover.name=Ceinture Thaumostatique
+item.ring_verdant.name=Bague de coeur verdoyant
+item.verdant.life.text=Donneur de vie
+item.verdant.sustain.text=Pourvoyeur
+ 
 
 # Wand
 item.focus_fire.name=Foci de baguette : Feu
@@ -553,7 +571,7 @@ item.focus_pouch.name=Sacoche à Foci
 #
 item.Wand.name=%OBJ %ROD %CAP
 item.Focus.cost1=Vis par lancer
-item.Focus.cost2=Vis par tique
+item.Focus.cost2=Vis par tic
 item.Wand.wand.obj=Baguette
 item.Wand.sceptre.obj=Sceptre
 item.Wand.staff.obj=Bâton
@@ -584,7 +602,7 @@ item.knowledge_fragment.name=Fragment de connaissance
 item.knowledge_fragment.help=Utiliser pour gagner de l'expérience
 item.eldritch_eye.name=Oeil surnaturel
 item.crimson_rites.name=Rites cramoisis
-item.crimson_rites.text.0=Le livre est rempli d'étrange symboles.
+item.crimson_rites.text.0=Le livre est rempli d'étranges symboles.
 item.crimson_rites.text.1=Cliquer pour l'étudier.
 item.runed_tablet.name=Tablette runique
 item.runed_tablet.text=On dirait que ça fait parti de quelque chose de plus grand.
@@ -595,6 +613,7 @@ item.creative_placer.obelisk.name=Placeur d'obélisque
 item.creative_placer.node.name=Placeur de nœud
 item.creative_placer.caster.name=Placeur de lanceur automatique ancien
 item.creative_flux_sponge.name=Éponge à Flux
+item.jar_brace.name=Attache de couvercle en laiton
 #
 #Golem
 item.module.vision.name=Module de Vision
@@ -659,13 +678,15 @@ golem.trait.text.brutal=Le golem inflige d'avantage de dégâts au corps-à-corp
 golem.trait.breaker=Briseur
 golem.trait.text.breaker=Le golem est capable de briser la plupart des blocs avec aise.
 golem.trait.hauler=Transporteur
-golem.trait.text.hauler=Le golem peut transporter deux stacks au lieu d'un seul.
+golem.trait.text.hauler=Le golem peut transporter deux piles au lieu d'une seule.
 golem.trait.ranged=A Distance
 golem.trait.text.ranged=Le golem peut attaquer des cibles à distance.
+golem.trait.blastproof=Anti-explosion
+golem.trait.text.blastproof=Le golem est très résistant aux dommages causés par des explosions.
 #
 # Props
 golem.material.wood=Bois arcanique
-golem.material.text.wood=Le golem est fait de bois aracanique. Il est léger et agile, mais pas particulièrement solide.
+golem.material.text.wood=Le golem est fait de bois arcanique. Il est léger et agile, mais pas particulièrement solide.
 golem.material.iron=Fer
 golem.material.text.iron=Le golem est fait de fer. Il est solide et ignifugé, mais lourd.
 golem.material.brass=Cuivre
@@ -682,7 +703,7 @@ golem.head.text.basic=La tête de golem par défaut. Pas de forces ou de faibles
 golem.head.smart=Tête intelligente
 golem.head.text.smart=Cette tête contient un cerveau biothaumique avancé, conférant au golem des aptitudes supérieures et des capacités d'apprentissage.
 golem.head.smart_armored=Tête intelligente blindée
-golem.head.text.smart_armored=La tête intelligente améliorée à l'aide de renforcements et blindages supplémentaires.
+golem.head.text.smart_armored=La tête intelligente est améliorée à l'aide de renforcements et de blindages supplémentaires.
 golem.head.scout=Tête perceptive
 golem.head.text.scout=Le mécanisme d'horloger basique amélioré à l'aide d'yeux biothaumiques.
 golem.head.smart_scout=Tête biothaumique
@@ -713,10 +734,10 @@ golem.addon.text.armored=Confère au golem une durabilité augmentée.
 golem.addon.fighter=Module d'aggression
 golem.addon.text.fighter=Permet au golem d'engager un combat.
 golem.addon.hauler=Cadre de transport
-golem.addon.text.hauler=Permet au golem de transporter deux stacks au lieu d'un seul.
+golem.addon.text.hauler=Permet au golem de transporter deux piles au lieu d'une seule.
 #
 golem.follow=J'arrive Maître
-golem.stay=Je resterais ici Maître
+golem.stay=Je resterai ici Maître
 #
 # Fluids
 ##############################
@@ -749,27 +770,27 @@ focus.upgrade.earthshock.text=A la place d'une boule de foudre, le Foci tire a p
 focus.upgrade.fireball.name=Boule de feu
 focus.upgrade.fireball.text=Le Foci produit à présent une boule de feu explosive que vous pouvez lancer à vos ennemis. L'amélioration du feu de l'alchimiste fait qu'elle enflammera le sol autour du point d'impact.
 focus.upgrade.firebeam.name=Rayon de flamme
-focus.upgrade.firebeam.text=La Foci produit à présent un étroit rayon de feu plutot qu'un large nuage. Il brule à travers tout ce qu'il touche infligeant des dégats massifs.
+focus.upgrade.firebeam.text=La Foci produit à présent un étroit rayon de feu plutot qu'un large nuage. Il brûle à travers tout ce qu'il touche infligeant des dégats massifs.
 focus.upgrade.batbombs.name=Chauves-souris explosives
 focus.upgrade.batbombs.text=Cette amélioration va rendre les chauves-souris invoquées encore plus instables. Elles vont toujours exploser au contact d'une cible et l'explosion sera plus puissante.
 focus.upgrade.devilbats.name=Chauve-souris démoniaques
-focus.upgrade.devilbats.text=Avec cette amélioration les chauves-souris invoquées sont plus grosses, plus résistantes et plus méchantes. Elles n'exploseront jamais, mais continueront d'attaquer leur cible jusqu'a que celle-ci meurt ou que la chauve-souris soit tuée.
+focus.upgrade.devilbats.text=Avec cette amélioration les chauves-souris invoquées sont plus grosses, plus résistantes et plus méchantes. Elles n'exploseront jamais, mais continueront d'attaquer leur cible jusqu'à ce que celle-ci meurt ou que la chauve-souris soit tuée.
 focus.upgrade.vampirebats.name=Chauve-souris vampires
 focus.upgrade.vampirebats.text=Cette amélioration transforme les chauves-souris en chauves-souris vampires. Non seulement elles aspireront la vie de leur cible pour régénerer la leur, mais en plus une partie de la vie volée est envoyée à leur invocateur.
 focus.upgrade.scattershot.name=Tir de barrage
-focus.upgrade.scattershot.text=A la place d'un unique fragment de glace, le Foci va maintenant tirer de multiples fragments. Chaque fragments fait des dégats minimaux, maisune salve concentrée peut faire des dégats important à une cible unique.
+focus.upgrade.scattershot.text=A la place d'un unique fragment de glace, le Foci va maintenant tirer de multiples fragments. Chaque fragments fait des dégats minimaux, mais une salve concentrée peut faire des dégats important à une cible unique.
 focus.upgrade.iceboulder.name=Bloc de glace
-focus.upgrade.iceboulder.text=Le Foci va créer un large bloc de glace. Le bloc a tendance à rebondir le rendant mortel entre des mains expertes.
+focus.upgrade.iceboulder.text=Le Foci va créer un large bloc de glace. Le bloc à tendance à rebondir le rendant mortel entre des mains expertes.
 focus.upgrade.alchemistsfire.name=Feu de l'alchimiste
-focus.upgrade.alchemistsfire.text=Cette amélioration améliore la puissance de l'élément feu dans le Foci. Toutes cibles enflammer brulera beaucoup plus longtemps.
+focus.upgrade.alchemistsfire.text=Cette amélioration améliore la puissance de l'élément feu dans le Foci. Toutes cibles enflammée brûlera beaucoup plus longtemps.
 focus.upgrade.alchemistsfrost.name=Froid de l'alchimiste
 focus.upgrade.alchemistsfrost.text=Cette amélioration améliore le puissance de l'élément froid dans le Foci. Quand le Foci cible ou blesse une créature, cette dernière sera gelé et ralentit considérablement.
 focus.upgrade.nightshade.name=Ombrenuit
-focus.upgrade.nightshade.text=Normalement le Foci de la malédictions des Pech inflige un effet debilitant parmi une peite poignée d'effets. Avec cette amélioration il les infligera tous.
+focus.upgrade.nightshade.text=Normalement le Foci de la malédictions des Pech inflige un effet débilitant parmi une petite poignée d'effets. Avec cette amélioration il les infligera tous.
 focus.upgrade.silktouch.name=Toucher de soie
-focus.upgrade.silktouch.text=Comme l'enchantement du meme nom, cette amélioration permet de récupérer les blocs tel qu'ils sont dans le monde.
+focus.upgrade.silktouch.text=Comme l'enchantement du même nom, cette amélioration permet de récupérer les blocs tel qu'ils sont dans le monde.
 focus.upgrade.seeker.name=Chercheur
-focus.upgrade.seeker.text=Cette amélioration fait que l'orbe créer par le Foci primaire cherchera la forme de vie la plus proche plutot que de vagabondera pas un peu partout. Cela les rends beaucoup plus stable, elle ne feront donc rien d'étranges à part exploser.
+focus.upgrade.seeker.text=Cette amélioration fait que l'orbe créé par le Foci primaire cherchera la forme de vie la plus proche plutot que de vagabonder un peu partout. Cela les rends beaucoup plus stable, elle ne feront donc rien d'étranges à part exploser.
 focus.upgrade.dowsing.name=Radiesthésie
 focus.upgrade.dowsing.text=Cette amélioration donne au Foci excavation une petite change de récupérer un amas inné de métal au lieu du minerai naturel. Ces amas donnent habituellement le double de lingot lorsque ils sont fondus.
 focus.upgrade.persistant.name=Persistent
@@ -787,15 +808,14 @@ recipe.type.workbenchshapeless=Atelier (Sans ordre)
 recipe.type.arcane=Atelier arcanique
 recipe.type.crucible=Creuset
 recipe.type.infusion=Infusion arcanique
-recipe.type.infusionenchantment=Infusion d'enchantement
 recipe.type.construct=Construction mystique
 wandtable.text1=Coût en vis
 wandtable.text2=Coût en experience
 wandtable.text3=Commencer l'amélioration
-button.turretfocus.1=Viser animaux
-button.turretfocus.2=Viser monstres
-button.turretfocus.3=Viser joueurs
-button.turretfocus.4=Viser amis
+button.turretfocus.1=Viser des animaux
+button.turretfocus.2=Viser des monstres
+button.turretfocus.3=Viser des joueurs
+button.turretfocus.4=Viser des amis
 turretfocus.range=Portée de %t blocs
 button.category.0=Priorité/Vérouillage
 button.category.1=Filtre
@@ -815,12 +835,12 @@ golem.prop.meta=Utiliser les métadonnées
 golem.prop.nbt=Utiliser les données NBT
 golem.prop.ore=Utiliser le dictionnaire de minerai
 golem.prop.mod=Utiliser les mods
-golem.prop.mob=Cibles Monstres
-golem.prop.animal=Cible Animaux
-golem.prop.player=Cible Joueurs
+golem.prop.mob=Cibles des Monstres
+golem.prop.animal=Cible des Animaux
+golem.prop.player=Cible des Joueurs
 golem.prop.left=Clic gauche
 golem.prop.empty=Clic dans le vide
-golem.prop.emptyhand=Peux utiliser une main vide
+golem.prop.emptyhand=Peut utiliser une main vide
 golem.prop.sneak=Simule un clic accroupi
 golem.prop.single=Un objet uniquement
 golem.prop.provision=Demande d'approvisionnement
@@ -837,7 +857,7 @@ golem.prop.redoff=Ignore les signaux Redstone
 #
 tile.researchtable.noink.0=Vous n'avez plus d'encre!
 tile.researchtable.noink.1=Remplissez vos outils de scribe.
-text.spa.mix.true=Mélanger avec ingrédients
+text.spa.mix.true=Mélanger avec des ingrédients
 text.spa.mix.false=Utiliser juste le liquide
 #
 color.white=Blanc
@@ -925,6 +945,7 @@ tc.discount=Réduction
 tc.visdiscount=Réduction de Vis
 tc.vis.cost=Coût de Vis
 tc.vis.costavg=Coût de Vis moyen
+tc.charge=Charge de Vis:
 tc.inst=Instabilité:
 tc.inst.0=§1Négligeable§0
 tc.inst.1=§9Mineure§0
@@ -938,7 +959,7 @@ tc.resonator1=§9Contient %1$s %2$s essentia§0
 tc.resonator2=§5Succion %1$s %2$s §0
 tc.resonator3=Non défini
 tc.search=Recherche
-tc.search.more=...trop de résultats trouvés, affiner votre recherche
+tc.search.more=... Trop de résultats trouvés, affiner votre recherche
 tc.research.newpage=§aNouvelle page ajoutée§0
 tc.research.newresearch=§6Nouvelle recherche découverte§0
 tc.research.purchase=Cliquer pour acheter cette recherche avec %1$s de niveau(x) d'expérience.
@@ -953,7 +974,7 @@ tc.primalcharm.1=Vous pensez entendre chuchoter
 tc.primalcharm.2=Ça vibre violemment
 tc.primalcharm.3=Ce fredonnement est plutôt apaisant
 tc.primalcharm.4=Attendez, ça a clignoté d'une septième couleur?
-tc.primalcharm.trigger=Pendant un moment, d'étranges énergies entourent le charme primaire. Elles se dissipent rapidement mais ça vous à laissé étrangement inspiré...
+tc.primalcharm.trigger=Pendant un moment, d'étranges énergies entourent le charme primaire. Elles se dissipent rapidement mais ça vous a laissé étrangement inspiré...
 tc.break.fly=Quelque chose perturbe votre capacité à voler.
 tc.boss.enrage=est enragée par vos puissant coups.
 tc.levitator=Portée réglé sur %s blocs. (%d vis/minute)
@@ -994,9 +1015,9 @@ tc.aspect.aversio=L'aversion, le conflit
 tc.aspect.gelum=la Glace, le Gel, le Froid
 tc.aspect.vitreus=le Cristal, le Verre, la Clareté
 tc.aspect.alienis=l'Étranger, le Bizarre, le Surnaturel
-tc.aspect.praemunio=La protection, la fortification, la garde
+tc.aspect.praemunio=la Protection, la Fortification, la Garde
 tc.aspect.fabrico=l'Artisanat
-tc.aspect.desiderium=Le souhait, le désire, l'envie, le besoin
+tc.aspect.desiderium=le Souhait, le Désir, l'Envie, le Besoin
 tc.aspect.machina=le Mécanisme, la Machine
 tc.aspect.vinculum=le Piège, l'Emprisonnement
 tc.aspect.permutatio=l'Échange, le Troc
@@ -1265,9 +1286,9 @@ tc.research_name.WANDPED=Piédestal de recharge
 tc.research_text.WANDPED=Recharge de baguette automatique
 tc.research_page.WANDPED.1=Traverser la campagne pour recharger votre baguette est très bien, mais une manière automatique de le faire serait beaucoup mieux.<BR>Ce piédestal est spécialement conçu pour ça. Toute baguette placée dessus va drainer automatiquement le Vis de l'aura.<BR>Les baguettes ne sont pas les seuls objets qui peuvent être recharger dans cet appareil - Plusieurs gadgets à Vis devraient pouvoir se recharger.
 #
-tc.research_name.VISAMULET=Stockage de Vis
+tc.research_name.VISAMULET=Rechargement de Vis portable
 tc.research_text.VISAMULET=Ne gâche rien, ne désire rien
-tc.research_page.VISAMULET.1=La plupart du temps une seule baguette est plus que suffisante pour n'importe quel thaumaturge, mais occasionnellement le Vis d'une seule baguette n'est pas suffisant. Transporter plus d'une baguette règlerais le problème, mais les expériences ont montré qu'il existait un autre moyen.<BR>En créant une amulette capable de stocker du Vis, vous serez capable de recharger votre baguette ou n'importe quel objet sur le terrain quand elle est portée.<BR>Votre succes est mitigé cependant. Vous pouvez seulement recharger un objet en le tenant dans votre main et le vitesse de charge est lente.
+tc.research_page.VISAMULET.1=La plupart du temps une seule baguette est plus que suffisante pour n'importe quel thaumaturge, mais occasionnellement le Vis d'une seule baguette n'est pas suffisant. Transporter plus de baguettes ou d'objets règlerais le problème, mais les expériences ont montré qu'il existait un autre moyen.<BR>En créant une amulette capable de canaliser le Vis de l'Aura, vous serez capable de recharger votre baguette ou n'importe quel objet sur le terrain<BR>Vous pouvez seulement recharger les baguettes et les objets dans votre barre d'inventaire, les cases baubles et d'armure (dans cet ordre). Elle peut recharger uniquement les objets qui peuvent être recharger par un piédestal de recharge.
 tc.research_page.VISAMULET.2=Par contre l'amulette se montre parfaite source d'énergie pour d'autre chose comme l'enchantement de réparation ou le bouclier runique.<BR>L'amulette se recharge d'elle même lentement lorsque elle est portée ou elle peut être placée dans un piédestal de recharge.<BR>It will not drain the aura once it falls below 10%.
 #
 tc.research_name.WORKBENCHCHARGER=Chargeur d'atelier arcanique
@@ -1369,7 +1390,7 @@ tc.research_page.JARBRAIN.1=Vous avez découvert un moyen de réanimer un cervea
 #
 tc.research_name.HOVERHARNESS=Harnais thaumostatique
 tc.research_text.HOVERHARNESS=Est-ce un oiseau...
-tc.research_page.HOVERHARNESS.1=Vous avez finalement réussi à percer le secret du vol. Vous avez créé un harnais qui s'ancre lui-même dans un champ thaumique en utilisant l'énergie thaumostatique et vous permettant ainsi de défier la gravité. Vous pensez que quantums et quarks pourraient aussi être impliqués d'une façon ou d'une autre.<BR>Le harnais est alimenter par le Vis provenant de l'Aura local. Une seule unité de vis d'Aer et d'Ignis fournissent assez de pussance pour 1 seconde de vol. Le harnais possède un tampon qui stocke assez de vis pour 10 secondes de vol si l'Aura local est épuisée.<BR>Appuyer sur 'H' lorsque le harnais est porté pour l'activer ou le désactiver.
+tc.research_page.HOVERHARNESS.1=Vous avez finalement réussi à percer le secret du vol. Vous avez créé un harnais qui s'ancre lui-même dans un champ thaumique en utilisant l'énergie thaumostatique et vous permettant ainsi de défier la gravité. Vous pensez que quantums et quarks pourraient aussi être impliqués d'une façon ou d'une autre.<BR>Le harnais est alimenter par le Vis donc il a besoin d'être chargé. Une seule unité de vis d'Aer et d'Ignis fournissent assez de puissance pour 1 seconde de vol. Le harnais possède un tampon qui stocke assez de vis pour 5 minutes de vol.<BR>Appuyer sur 'H' lorsque le harnais est porté pour l'activer ou le désactiver.
 tc.research_page.HOVERHARNESS.2=Il peut être enchanté avec Hâte pour améliorer la vitesse à laquelle vous bouger en volant.<BR>Le harnais ne réduira pas votre vitesse de destruction de blocs lorsque vous volez avec.
 #
 tc.research_name.HOVERGIRDLE=Ceinture Thaumostatique
@@ -1479,6 +1500,27 @@ tc.research_text.REDSTONERELAY=Intéraction de redstone magique
 tc.research_page.REDSTONERELAY.1=Vous avez toujours été curieux de la réaction négative apparente entre les dispositifs mystiques et les signaux redstone. Vous avez étudié la question et si le phénomène bien connu que la redstone inhibe la magie, vous avez découvert que dans des circonstances particulières, l'inverse peut être aussi vrai.<BR>Une application pratique de cela est le relais redstone. En envoyant un signal redstone à travers une substance magique comme les cristaux de Vis, vous pouvez l'inhiber autant que peu à votre souhait.
 tc.research_page.REDSTONERELAY.2=Les relais sont placés un peu comme les répéteurs redstone avec leur côté sortie marqué par une torche.<BR>Contrairement aux répéteurs, les relais ont deux bascules. Celui à l'arrière détermine le signal minimum d'entré recquis pour submerger cet effet inhibitant et permettre le relais de s'activer.<BR>La bascule avant (à côté de la torche) détermine la force du signal redstone que le relais va émettre une fois actif.
 #
+tc.research_name.INFUSIONENCHANTMENT=Infusion d'enchantement
+tc.research_text.INFUSIONENCHANTMENT=Enchantement thaumaturgique
+tc.research_page.INFUSIONENCHANTMENT.1=Les outils élémentaires se sont avérés très utiles, mais la méthode que vous utilisez pour les enchanter est inflexible... j'usqu'à maintenant. Vous avez découvert un moyen d'appliquer un grand nombre de leurs abilités à presque tout les outils et armes, pas seulement les outils en thaumium.<BR>Certains enchantements peuvent être appliqués plusieurs fois au même objet mais chaque rang a un prix en essentia plus élevé lors de la fabrication.<BR>Chaque infusion d'enchantement différent sur l'objet  augmente aussi le prix de 33% et a une chance accrue de lui donner la propriété Warper.
+tc.research_page.INFUSIONENCHANTMENT.2=Certains enchantements d'infusion peuvent seulement être appliqués à des outils ou armes spécifiques. Ce sera répertorié sous chaque entrée individuel qui suit.<BR>Les outils avec des enchantements d'infusion peuvent toujours être enchanté avec une table normal d'enchantement et vise versa.<BR>Comme avec les outils élémentaux, maintenir "Maj" lors de l'utilisation d'un outil enchanté par l'infusion va désactiver ses abilités.
+tc.research_page.INFUSIONENCHANTMENT.COLLECTOR=§nCollectionneur§r<BR>Chaque fois que cet outil récolte un objet, il va automatiquement flotter vers vous.<BR>§lRangs§r: aucun<BR>§lCible§r: hache, pioche, pelle, arme
+tc.research_page.INFUSIONENCHANTMENT.BURROWING=§nAffouillement§r<BR>Lorsque vous essayez de couper un arbre ou de récolter du minerai, le bloc le plus éloigné seras détruit au lieu de celui que vous êtes en train de briser.<BR>§lRangs§r: aucun<BR>§lCible§r: hache, pioche.
+tc.research_page.INFUSIONENCHANTMENT.REFINING=§nAffinage§r<BR>Chaque fois que vous récoltez du minerai, il y'a une chance que vous gagnez un amas inné à la place. Augmenter le rang de cet enchantement va améliorer les chances d'en obtenir.<BR>§lRangs§r: 1-4<BR>§lCible§r: pioche
+tc.research_page.INFUSIONENCHANTMENT.SOUNDING=§nÉmetteur§r<BR>Vous pouvez faire un clique droit sur un bloc avec cet  outil pour envoyer une impulsion sonore. Cette impulsion va réveler tout les minerai cachés à proximité. Utiliser cette abilité va causer des dommages à l'outil<BR>§lRangs§r: 1-4<BR>§lCible§r: pioche
+tc.research_page.INFUSIONENCHANTMENT.DESTRUCTIVE=§nDévastateur§r<BR>Lorsque vous récoltez un bloc, les 8 blocs qui les entourent seront aussi récoltés si ils sont aussi récoltable par cette outil. Chaque bloc supplémentaire récolter provoque une perte de durabilité comme si vous les aviez récolté à la main.<BR>§lRangs§r: aucun<BR>§lCible§r: hache, pioche, pelle
+tc.research_page.INFUSIONENCHANTMENT.ARCING=§nArc§r<BR>Lorsque vous frappez un ennemi avec une arme enchanté avec ceci, un arc de vent mordant va toucher une cible supplémentaire à proximité en appliquant la moitié des dommages de l'arme. Les rangs supplémentaires vont augmenter le nombre de cibles touchés a porté.<BR>§lRangs§r: 1-4<BR>§lCible§r: arme
+tc.research_page.INFUSIONENCHANTMENT.ESSENCE=§nMoissonneur d'essence§r<BR>Lorsque vous tuez une créature avec cette arme enchantée, elle a une chance de lâcher une partie de son essense sous forme de cristaux. Augmenter le rang de cette enchantement va augmenter les chances d'obtenir des cristaux mais aussi le nombre de cristaux lâchés<BR>§lRangs§r: 1-5<BR>§lCible§r: arme
+#
+tc.research_name.VERDANTHEART=Bague de coeur verdoyant
+tc.research_text.VERDANTHEART=Guérison de ce qui vous fait souffrir
+tc.research_page.VERDANTHEART.1=Cet anneau mystique pulse avec de l'énergie curative qui va laver tout les poisons ou afflictions similaire de votre corps. Malheuresement, il ne peut pas guérir les plaie actuel.<BR>L'anneau à un stockage de Vis interne qui a besoin d'être recharger avec un piédestal de recharge ou un objet similaire - Il ne peut pas drainer le Vis de l'Aura directement.
+#
+tc.research_name.VERDANTHEARTLIFE=Donneur de vie & Pourvoyeur
+tc.research_text.VERDANTHEARTLIFE=Baume pour le corps
+tc.research_page.VERDANTHEARTLIFE.1=Il y'a deux enchantement spécialisés qui peut être appliqué à la bague de coeur verdoyant. Malheuresement, ces enchantements d'exclus mutuellement - vous ne pouvez pas appliquer les deux en même temps.<LINE>§nDonneur de vie§r<BR>Cet enchantement d'infusion permet à la bague de regénérer la vie à quiconque la porte.
+tc.research_page.VERDANTHEARTLIFE.2=§nPourvoyeur§r<BR>Cet enchantement d'infusion permet à la bague de coeur verdoyant de nourrir et de pourvoyer lentement  quiconque la porte. Cela inclus de fournir de l'air respirable.<LINE>La surprise aux trois viandes est fabriquer avec du sucre et des différent morceaux de viande. Ce n'est pas seulement un composant d'artisanat, mais aussi un délicieux et sain régal.
+#
 # Alchemy
 #######################
 tc.research_name.CRUCIBLE=Alchimie basique
@@ -1564,6 +1606,7 @@ tc.research_text.JARLABEL=Stocker et organiser l'Essentia
 tc.research_page.JARLABEL.1=L'Essentia peut être stocké dans des §lbocaux renforcés§r.<BR>Les bocaux renforcés peuvent être placés dans le monde et sont capables de stocker l'Essentia quasiment indéfiniment. L'enchantement placé sur les bocaux permet également d'ajouter ou d'extraire l'Essentia.<BR>Les bocaux peuvent être remplis à partir d'un alambic en cliquant avec le bocal directement sur l'alambic. Ils peuvent également être remplis et vidés en utilisant des fioles.<BR>C'est ce qui fait d'eux un excellent support de stockage pour les confitures et les conserves.
 tc.research_page.JARLABEL.2=Faire shift-clic sur les bocaux et les alambics avec une main vide va les vider.<BR>Tant qu'un bocal contient de l'Essentia, vous pouvez lui attacher une §létiquette§r.<BR>Cette étiquette 'bloque' le pot pour ce type d'Essentia et il ne sera pas en mesure d'accepter un autre type d'Essentia.<BR>Vous pouvez supprimer une étiquette en faisant shift-clic avec une main vide sur le côté du bocal contenant l'étiquette. Prenez soin de ne pas déplacer clic sur un autre côté, sinon il va vider le bocal.
 tc.research_page.JARLABEL.3=Vous pouvez placer une étiquette dans un atelier avec une fiole d'Essentia pour lui attribuer un aspect et lorsqu'elle est placée sur un bocal vide, elle verrouille automatiquement le bocal sur cet aspect. L'Essentia utilisé dans la recette n'est pas consommé.<BR>En la plaçant sur un bocal rempli, elle va changer l'étiquette du type d'Essentia.<LINE>Une étiquette peut être vierge à nouveau en la plaçant simplement par elle-même dans une grille d'artisanat.
+tc.research_page.JARLABEL.4=Vous pouver également fabriquer des attaches de couvercle en laiton. Lorsqu'ils sont utilisés sur des bocaux, ils préviennent l'essentia d'être drainé ou placé par autre choses que des tubes.<BR>Récupérer le bocal va retirer l'attache qui tombera au sol.
 #
 tc.research_name.ETHEREALBLOOM=Fleur éthérée
 tc.research_text.ETHEREALBLOOM=Purification de fleur
