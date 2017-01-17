@@ -1635,7 +1635,7 @@ tc.research_page.THAUMATORIUM.3=Normally a Thaumatorium can only have one active
 #
 tc.research_name.BATHSALTS=Zuiverende Badzouten
 tc.research_text.BATHSALTS=Ontspanning voor de geest
-tc.research_page.BATHSALTS.1=Warp is een gevaar voor zelfs de meest voorzichtigen der thaumaturgen. Voor hen die een beetje te veel hebben gerotzooid, zijn Warp effecten waarschijnlijk meet dan slechts een ergernis. Zuiverende Badzouten helpen daar tegen.<BR>Het simpelweg in het water gooien van deze zouten, verandert het water in een zilverachtige, zuiverende vloeistof die de stress van de dag verzacht en een tijdelijke opheffing van de effecten van Warp teweeg brengt.Het moet echter gezegd worden dat hoe meer warp een thaumaturg te verdragen heeft, hoe korter de duur van deze bescherming is.<BR>De zouten zijn best breekbaar en verdwijnen snel als ze lukraak in het rond worden gestrooid.
+tc.research_page.BATHSALTS.1=Warp is een gevaar voor zelfs de meest voorzichtigen der thaumaturgen. Voor hen die een beetje te veel hebben gerotzooid, zijn Warp effecten waarschijnlijk meer dan slechts een ergernis. Zuiverende Badzouten helpen daar tegen.<BR>Door deze zouten simpelweg in het water te gooien, verandert het water in een zilverachtige, zuiverende vloeistof die de stress van de dag verzacht en een tijdelijke opheffing van de effecten van Warp teweeg brengt. Er moet echter gezegd worden dat hoe meer warp een thaumaturg te verdragen heeft, hoe korter de duur van deze bescherming is.<BR>De zouten zijn erg vluchtig en verdwijnen snel als ze lukraak in het rond worden gestrooid.
 #
 tc.research_name.LIQUIDDEATH=Vloeibare Dood
 tc.research_text.LIQUIDDEATH=Alleen voor buitengebruik
